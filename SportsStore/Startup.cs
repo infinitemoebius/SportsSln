@@ -48,7 +48,7 @@ namespace SportsStore
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute("catpage",
-                    "{category/Page{productPage:int}",
+                    "{category}/Page{productPage:int}",
                     new { Controller = "Home", action = "Index" });
 
                 endpoints.MapControllerRoute("page", "Page{productPage:int}",
